@@ -1,0 +1,39 @@
+<html ng-app="main">
+    <head>
+        <title>NG-Micro Test</title>
+        <style>
+            [ng-cloak] {
+                display : none;
+            }
+        </style>
+
+        <!-- Template Libraries -->
+        <script type="text/html+micro-template">
+            <micro-template id="mc-test">
+                <h1 class="title">Test</h1>
+                <p class="subtitle">Micro Template Test</p>
+                <div ng-transclude></div>
+            </micro-template>
+            <micro-template id="mc-input">
+                <h5 class="label">{{ label }}</h5>
+                <input type="text" ng-model="value">
+            </micro-template>
+        </script>
+        <!-- / Template Libraries -->
+
+        <script src="test/libs/angular/angular.js"></script>
+        <script src="micro-template.js"></script>
+        <script src="test/test.js"></script>
+    </head>
+    <body ng-cloak>
+        <div class="app-wrap">
+            <mc-test>
+                Lorem ipsum dolor
+            </mc-test>
+            <div ng-controller="McInput as vm">
+                <mc-input label="Input Test" value="vm.value"></mc-input>
+                <span>Input value was: {{ vm.value }}</span>
+            </div>
+        </div>
+    </body>
+</html>

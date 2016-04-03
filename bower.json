@@ -1,0 +1,28 @@
+{
+    "name"           : "angular-micro-template",
+    "version"        : "1.0.0",
+    "authors"        : [
+        "Nanang Mahdaen El Agung <nanang@stater.io> (http://mahdaen.name)"
+    ],
+    "description"    : "Angular In-Script Template Service",
+    "main"           : "micro-template.js",
+    "moduleType"     : [ ],
+    "keywords"       : [
+        "Angular",
+        "Template",
+        "Service"
+    ],
+    "license"        : "MIT",
+    "homepage"       : "http://ngmicro.stater.io",
+    "ignore"         : [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        "test.html"
+    ],
+    "devDependencies": {
+        "angular": "^1.5.3"
+    }
+}
